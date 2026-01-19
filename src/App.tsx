@@ -39,7 +39,7 @@ function App() {
       { name: 'Arctic White', hex: '#f0f0f5' },
       { name: 'Sunset Rose', hex: '#e8a4b8' }
     ],
-    reviews: [
+    customerReviews: [
       { name: 'Alex M.', rating: 5, date: '2 days ago', title: 'Mind-blowing!', text: 'I bought this as a gift for myself and have no regrets. The levitation feature is mesmerizing and the sound quality rivals speakers twice the price.' },
       { name: 'Sarah K.', rating: 5, date: '1 week ago', title: 'Perfect centerpiece', text: 'Everyone who visits asks about it. The RGB lighting syncs with the music and creates an amazing atmosphere. Worth every penny!' },
       { name: 'James T.', rating: 4, date: '2 weeks ago', title: 'Great but...', text: 'Sound is excellent and the floating effect is cool. Only wish the base was a bit heavier. Sometimes it wobbles on uneven surfaces.' }
@@ -223,7 +223,7 @@ function App() {
           </div>
         </div>
         <div className="reviews-list">
-          {product.reviews.map((review, i) => (
+          {product.customerReviews.map((review, i) => (
             <div key={i} className="review-card">
               <div className="review-header">
                 <div className="reviewer-info">
